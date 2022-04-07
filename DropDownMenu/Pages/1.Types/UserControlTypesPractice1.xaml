@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="DropDownMenu.UserControlTypesPractice1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DropDownMenu"
+             xmlns:diag="http://mindfusion.eu/diagramming/wpf"
+             mc:Ignorable="d" 
+             d:DesignHeight="740" d:DesignWidth="774">
+    <Grid >
+        <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" Margin="10,81,240,10">
+            <diag:Diagram x:Name="diagram" LinkHeadShapeSize="3" BackBrush="White" ShapeBrush="LightBlue" DefaultShape="Circle" Height="760" Width="514" KeyDown="diagram_KeyDown"></diag:Diagram>
+        </ScrollViewer>
+        <Label Content="Основные виды графа" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="780" Foreground="#DD008BFF" FontFamily="Tw Cen MT" FontSize="22" HorizontalContentAlignment="Center"/>
+        <Label Content="Задание: определите вид/тип графа, вычислите цикломатическое число и найдите любой контур." HorizontalAlignment="Left" Margin="10,49,0,0" VerticalAlignment="Top" Width="735"  FontFamily="Tw Cen MT" FontSize="16"/>
+        <ComboBox x:Name="ComboBox"  HorizontalAlignment="Left" Margin="555,98,0,0" VerticalAlignment="Top" Width="209"  FontFamily="Tw Cen MT" FontSize="16">
+            <ComboBoxItem Content="Смешанный" IsSelected="True"></ComboBoxItem>
+            <ComboBoxItem Content="Ориентированный"></ComboBoxItem>
+            <ComboBoxItem Content="Неориентированный"></ComboBoxItem>
+        </ComboBox>
+        <CheckBox x:Name="check1"  Content="Мультиграф" HorizontalAlignment="Left" Margin="555,148,0,0" VerticalAlignment="Top"  FontFamily="Tw Cen MT" FontSize="16"/>
+        <CheckBox x:Name="check2" Content="Обыкновенный" HorizontalAlignment="Left" Margin="555,188,0,0" VerticalAlignment="Top"  FontFamily="Tw Cen MT" FontSize="16"/>
+        <CheckBox x:Name="check3" Content="Полный" HorizontalAlignment="Left" Margin="555,232,0,0" VerticalAlignment="Top"  FontFamily="Tw Cen MT" FontSize="16"/>
+        <CheckBox x:Name="check4" Content="Связный" HorizontalAlignment="Left" Margin="555,281,0,0" VerticalAlignment="Top"  FontFamily="Tw Cen MT" FontSize="16"/>
+        <CheckBox x:Name="check5" Content="Взвешенный" HorizontalAlignment="Left" Margin="555,321,0,0" VerticalAlignment="Top"  FontFamily="Tw Cen MT" FontSize="16"/>
+        <CheckBox x:Name="check6" Content="Эйлеров" HorizontalAlignment="Left" Margin="555,367,0,0" VerticalAlignment="Top"  FontFamily="Tw Cen MT" FontSize="16"/>
+        <TextBox x:Name="CycleNumber" HorizontalAlignment="Left" Height="34" Margin="555,442,0,0" TextWrapping="Wrap" Text="дуги - вершины +1" VerticalAlignment="Top" Width="209" FontFamily="Tw Cen MT" FontSize="16"/>
+        <Label Content="Цикломатическое число" HorizontalAlignment="Left" Margin="555,411,0,0" VerticalAlignment="Top" FontFamily="Tw Cen MT" FontSize="16" />
+        <Label Content="Контур" HorizontalAlignment="Left" Margin="555,508,0,0" VerticalAlignment="Top" FontFamily="Tw Cen MT" FontSize="16"/>
+        <TextBox x:Name="Kontur" HorizontalAlignment="Left" Height="34" Margin="555,540,0,0" TextWrapping="Wrap" Text="Порядок имеет значение" VerticalAlignment="Top" Width="209" FontFamily="Tw Cen MT" FontSize="16"/>
+        <Button x:Name="btnAnswer" Content="Принять" HorizontalAlignment="Left" Margin="578,672,0,0" VerticalAlignment="Top" Width="122" Click="btnAnswer_Click"/>
+    </Grid>
+</UserControl>

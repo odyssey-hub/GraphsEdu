@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="DropDownMenu.UserControlMatrixLection1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DropDownMenu"
+             xmlns:diag="http://mindfusion.eu/diagramming/wpf"
+             mc:Ignorable="d" 
+             d:DesignHeight="740" d:DesignWidth="774" Loaded="UserControl_Loaded">
+    <Grid >
+        <Label Content="Матрица смежности, матрица инцидентности" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="780" Foreground="#DD008BFF" FontFamily="Tw Cen MT" FontSize="22" HorizontalContentAlignment="Center"/>
+        <ScrollViewer HorizontalAlignment="Left" Height="204" Margin="10,49,0,0" VerticalAlignment="Top" Width="754">
+            <TextBlock x:Name="TextBlock" TextWrapping="Wrap" Text="Text" FontSize="17" FontFamily="Tw Cen MT" />
+        </ScrollViewer>
+        <Image Source="/Images/2/1.png" Margin="10,285,464,355" Width="Auto" Height="Auto"></Image>
+        <Image Source="/Images/2/2.png" Margin="326,285,278,331" Width="Auto" Height="Auto" />
+        <Image Source="/Images/2/3.png" Margin="529,285,36,364" Width="Auto" Height="Auto"></Image>
+        <Label Content="Ориентированный граф" HorizontalAlignment="Left" Margin="43,503,0,0" VerticalAlignment="Top" FontFamily="Tw Cen MT" FontSize="19"/>
+        <Label Content="Матрица смежности" HorizontalAlignment="Left" Margin="326,503,0,0" VerticalAlignment="Top" FontFamily="Tw Cen MT" FontSize="19"/>
+        <Label Content="Матрица инцидентности" HorizontalAlignment="Left" Margin="529,503,0,0" VerticalAlignment="Top" FontFamily="Tw Cen MT" FontSize="19"/>
+        <Label Content="Ссылки" HorizontalAlignment="Left" Margin="43,609,0,0" VerticalAlignment="Top" FontFamily="Tw Cen MT" FontSize="19" FontWeight="Bold"/>
+        <TextBlock Margin="43,640,10,63" FontFamily="Tw Cen MT" FontSize="19"> <Hyperlink  NavigateUri="https://function-x.ru/graphs2_definitions_classes.html" Click="Hyperlink_Click">Матрица смежности, инцидентности</Hyperlink></TextBlock>
+    </Grid>
+</UserControl>

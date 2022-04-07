@@ -1,0 +1,28 @@
+﻿<UserControl x:Class="DropDownMenu.UserControlMinPractice2"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DropDownMenu"
+             xmlns:diag="http://mindfusion.eu/diagramming/wpf"
+             mc:Ignorable="d" 
+             d:DesignHeight="740" d:DesignWidth="774">
+    <Grid>
+        <Label Content="Алгоритм Дейкстры" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="780" Foreground="#DD008BFF" FontFamily="Tw Cen MT" FontSize="22" HorizontalContentAlignment="Center"/>
+
+        <Label Content="Задание: заполните таблицу шагов алгоритма Дейкстры" HorizontalAlignment="Left" Margin="10,49,0,0" VerticalAlignment="Top" Width="735"  FontFamily="Tw Cen MT" FontSize="16"/>
+        <TextBlock Text="Инструкция: см. Л2.Алгоритм Дейкстры" Margin="10,76,29,0" VerticalAlignment="Top" Width="735"  FontFamily="Tw Cen MT" FontSize="16" Height="49" TextWrapping="Wrap"/>
+        <Image Source="/Images/6/3.png" Margin="222,96,200,420" Width="Auto" Height="Auto"></Image>
+        <Button x:Name="btnAnswer" Content="Принять" HorizontalAlignment="Left" Margin="345,688,0,0" VerticalAlignment="Top" Width="105" Click="btnAnswer_Click"/>
+        <DataGrid x:Name="datagrid" HorizontalAlignment="Left" Height="265" Margin="127,407,0,0" VerticalAlignment="Top" Width="541" Loaded="datagrid_Loaded" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="i" Binding="{Binding Path=i}" Width="50" />
+                <DataGridTextColumn Header="S" Binding="{Binding Path=S}" Width="100" />
+                <DataGridTextColumn Header="W" Binding="{Binding Path=W}" Width="100" />
+                <DataGridTextColumn Header="D2" Binding="{Binding Path=D2}" Width="100" />
+                <DataGridTextColumn Header="D3" Binding="{Binding Path=D3}" Width="100" />
+                <DataGridTextColumn Header="D4" Binding="{Binding Path=D4}" Width="100" />
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</UserControl>

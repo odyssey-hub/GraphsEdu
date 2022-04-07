@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="DropDownMenu.UserControlAlgsPractice2"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DropDownMenu"
+             xmlns:diag="http://mindfusion.eu/diagramming/wpf"
+             mc:Ignorable="d" 
+             d:DesignHeight="740" d:DesignWidth="774">
+    <Grid>
+        <Label Content="Обход графа в ширину" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="780" Foreground="#DD008BFF" FontFamily="Tw Cen MT" FontSize="22" HorizontalContentAlignment="Center"/>
+        <ScrollViewer  Margin="10,192,10,32" HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Visible">
+            <diag:Diagram x:Name="diagram" LinkHeadShapeSize="3" BackBrush="White" ShapeBrush="LightBlue" DefaultShape="Circle"  KeyDown="diagram_KeyDown" NodeClicked="diagram_NodeClicked"  ZoomFactor="70"></diag:Diagram>
+        </ScrollViewer>
+        <Label Content="Задание: укажите правильную последовательнсть обработки вершин при обходе в глубину" HorizontalAlignment="Left" Margin="10,49,0,0" VerticalAlignment="Top" Width="735"  FontFamily="Tw Cen MT" FontSize="16"/>
+        <Button x:Name="btnClear" Content="Очистить" HorizontalAlignment="Left" Margin="663,155,0,0" VerticalAlignment="Top" Width="101" Click="btnClear_Click"/>
+        <Label x:Name="labelPath" Content="Последовательность: " HorizontalAlignment="Left" Margin="10,141,0,0" VerticalAlignment="Top" Width="535"  FontFamily="Tw Cen MT" FontSize="16"/>
+        <TextBlock Text="Инструкция: нажимайте на вершины графа левым щелчком мыши в той последовательности, в которой они должны обрабатываться при обходе в глубину. Вершины выбираются в алфавитном порядке" HorizontalAlignment="Left" Margin="10,81,0,0" VerticalAlignment="Top"   FontFamily="Tw Cen MT" FontSize="16" Height="50" Width="754" TextWrapping="Wrap"/>
+    </Grid>
+</UserControl>

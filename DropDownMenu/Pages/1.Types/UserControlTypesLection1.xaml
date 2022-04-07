@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="DropDownMenu.UserControlTypesLection1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DropDownMenu"
+             xmlns:diag="http://mindfusion.eu/diagramming/wpf"
+             mc:Ignorable="d" 
+             d:DesignHeight="740" d:DesignWidth="774" Loaded="UserControl_Loaded">
+    <Grid>
+        <Label Content="Основные виды и типы графов" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="780" Foreground="#DD008BFF" FontFamily="Tw Cen MT" FontSize="22" HorizontalContentAlignment="Center"/>
+        <ScrollViewer HorizontalAlignment="Left" Height="307" Margin="10,49,0,0" VerticalAlignment="Top" Width="754">
+            <TextBlock x:Name="TextBlock" TextWrapping="Wrap" Text="Text" FontSize="17" FontFamily="Tw Cen MT" />
+        </ScrollViewer>
+        <Image Source="/Images/1/1.png" Margin="10,411,464,229" Width="Auto" Height="Auto"></Image>
+        <Image Source="/Images/1/2.png" Margin="333,361,271,255" Width="Auto" Height="Auto" />
+        <Image Source="/Images/1/3.png" Margin="540,375,25,274" Width="Auto" Height="Auto"></Image>
+        <Label Content="Ориентированный граф" HorizontalAlignment="Left" Margin="43,573,0,0" VerticalAlignment="Top" FontFamily="Tw Cen MT" FontSize="19"/>
+        <Label Content="Неориентированный граф" HorizontalAlignment="Left" Margin="307,573,0,0" VerticalAlignment="Top" FontFamily="Tw Cen MT" FontSize="19"/>
+        <Label Content="Полный граф" HorizontalAlignment="Left" Margin="582,573,0,0" VerticalAlignment="Top" FontFamily="Tw Cen MT" FontSize="19"/>
+        <Label Content="Ссылки" HorizontalAlignment="Left" Margin="43,609,0,0" VerticalAlignment="Top" FontFamily="Tw Cen MT" FontSize="19" FontWeight="Bold"/>
+        <TextBlock Margin="43,640,10,63" FontFamily="Tw Cen MT" FontSize="19"> <Hyperlink  NavigateUri="https://function-x.ru/graphs2_definitions_classes.html" Click="Hyperlink_Click">Виды и типы графов</Hyperlink></TextBlock>
+    </Grid>
+</UserControl>
